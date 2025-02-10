@@ -1,37 +1,3 @@
-# robots.txt for best Google crawling
-
-# Allow all search engines to crawl all content
 User-agent: *
-Disallow: /admin/
-Disallow: /login/
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /private/
-Disallow: /user/
-Disallow: /register/
-
-# Allow Googlebot to crawl everything except restricted areas
-User-agent: Googlebot
-Disallow: /admin/
-Disallow: /login/
-Disallow: /checkout/
-Disallow: /cart/
-Disallow: /private/
-Disallow: /user/
-Disallow: /register/
-
-# Block a specific bot from crawling the site
-User-agent: BadBot
-Disallow: /
-
-# Sitemap location (helps crawlers find your sitemap easily)
+Allow: /
 Sitemap: https://istanakota.github.io/sitemap.xml
-
-# Block bots from indexing certain file types (like PDFs or temporary files)
-Disallow: /*.pdf$
-Disallow: /*.zip$
-Disallow: /*.tar$
-
-# Enable Googlebot to crawl your images
-User-agent: Googlebot-Image
-Allow: /images/
